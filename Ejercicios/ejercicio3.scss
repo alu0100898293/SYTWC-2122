@@ -1,0 +1,53 @@
+$color01:#531946;
+$color02:#fff;
+$color03:#30162B;
+$color04:#095169;
+
+@mixin atributtes($background-color){
+    background-color: $background-color;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+@mixin a($color){
+    & a{
+        color: $color;
+        @content;
+    }
+}
+
+@mixin hover($color){
+    &:hover{
+        color: $color;
+    }
+}
+
+.header {
+    @include atributtes($color01);
+
+    @include a($color02){
+        @include hover($color04);
+    }
+
+  }
+
+  .footer {
+    @include atributtes($color03);
+    color: $color02;
+
+    @include a($color04){
+        @include hover($color02);
+    }
+  }
+
+  .feature a{
+    @include atributtes($color03);
+    color: $color02;
+
+    @include hover($color01);
+  }
+
+  .content {
+    @include atributtes($color02);
+    color: #222;
+  }

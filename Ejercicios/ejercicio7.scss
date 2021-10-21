@@ -1,0 +1,13 @@
+.header {
+   @each $temp in -webkit-,-moz-, '' {
+         #{$temp}border-radius: 5px;
+     }
+   /* ... */
+ }
+
+ .footer {
+   @each $temp in -webkit-,-moz-, '' {
+         #{$temp}border-radius: 10px;
+     }
+   /* ... */
+ }

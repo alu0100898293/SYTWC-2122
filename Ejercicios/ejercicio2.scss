@@ -1,0 +1,39 @@
+$color01: #fff;
+$color02: #095169;
+$color03: #30162B;
+
+header {
+    background-color: #531946;
+    & a {
+        color:$color01;
+	&:hover {
+            color:$color02;
+        }
+    }
+  }
+
+  .footer {
+    background-color: $color03;
+    color: $color01;
+
+    & a {
+        color:$color02;
+        &:hover {
+            color:$color01;
+        }
+    }
+  }
+
+  .feature a {
+    background-color: $color03;
+    color: $color01;
+
+    &:hover {
+        color: #531946;
+    }
+  }
+
+  .content {
+    background-color: $color01;
+    color: #222;
+  }
