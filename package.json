@@ -1,0 +1,22 @@
+{
+  "name": "sytwc-2122",
+  "version": "1.0.0",
+  "description": "Repositorio para la asignatura de Máster SYTWC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alu0100898293/SYTWC-2122.git"
+  },
+  "author": "alu0100898293",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alu0100898293/SYTWC-2122/issues"
+  },
+  "homepage": "https://github.com/alu0100898293/SYTWC-2122#readme",
+  "dependencies": {
+    "sass": "^1.43.2"
+  }
+}
