@@ -1,0 +1,21 @@
+@mixin radius-and-padding{
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+header {
+    @include radius-and-padding;
+  }
+
+  .footer {
+    @include radius-and-padding;
+  }
+
+  .feature a {
+    @include radius-and-padding;
+  }
+
+  .content {
+    @include radius-and-padding;
+  }
+
