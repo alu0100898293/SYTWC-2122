@@ -1,5 +1,5 @@
 # Práctica Introductoria de Sass
----
+
 ## Ejercicios introductorios
 Los ejercicios introductorios de Sass se ecnuentran en la correspondiente carpeta [Ejercicios](https://github.com/alu0100898293/SYTWC-2122/tree/main/PracticaSass/Ejercicios). En su interior podemos hallar seis archivos .scss que corresponden cada unos a los mencionados ejercicios enumerados del dos al siete y, como se puede suponer, cada archivo es la respuesta al ejercio cuyo nombre hace referencia.
 
