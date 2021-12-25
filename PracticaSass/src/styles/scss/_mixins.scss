@@ -1,0 +1,30 @@
+@import "_variables.scss";
+
+@mixin title ($font-size){
+    font-family: $font-title;
+    font-size: $font-size;
+    font-style: $font-italic;
+}
+
+@mixin container ($b-color){
+    background-color: $b-color;
+    text-align: $text-align;
+    padding-bottom: $padding-mid;
+    border-radius: $radius;
+}
+
+@mixin container-with-image ($b-color){
+    background-color: $b-color;
+    text-align: $text-align;
+    padding-bottom: $padding-mid;
+    border-radius: $radius;
+    overflow: hidden;
+    position: relative;
+}
+
+@mixin image ($s-width){
+    position: absolute;
+    display: block;
+    width: $s-width;
+    height: 55%;
+}

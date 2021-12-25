@@ -1,0 +1,25 @@
+body{
+    background-color: $back-color;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'main1 main1 main1 form'
+    'main2 main2 main2 form'
+    'main3 main3 main3 form'
+    'footer footer footer footer';
+    grid-gap: $padding-double;
+    padding: $padding-double;
+}
+
+.container01{
+    grid-area: main2;
+    columns: $column-width 3;
+}
+
+.container02{
+    grid-area: main3;
+    columns: $column-width 2;
+}
