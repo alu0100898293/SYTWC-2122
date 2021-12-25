@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Landing Page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Landing page introductoria en el uso de Sass">
+    <link rel="stylesheet" href="./src/styles/css/style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <img class="logo" src="./src/img/logo.png" alt="Logo de la empresa">
+            <h1>SMART RENT</h1>
+        </div>
+        <div class="benefits">
+            <h1>¿Quiénes somos?</h1>
+            <p>Nuevos en el sector pero con la mayor ilusión, Smart Rent es una empresa dedicada
+                a porporcionar a sus clientes los vehículos de alquiler que necesite cuando y donde los necesite.
+                <br>
+                Siempre pensando en lo mejor para nuestros clientes, ponemos a su dispoción una amplia 
+                gama de vehículos con unos precios de lo más competitivos en el sector del alquiler.
+            </p>
+        </div>
+
+        <div class="container01">
+            <div class="example">
+                <span class="moto-img" role="img" aria-label="Imagen que muestra una de las motos ofertadas"></span>
+                <h1>Motocicletas</h1>
+                <p>Disponemos de ciclomotores de menor cilindrada y motocicletas que alcanzan hasta los 300cc.</p>
+            </div>
+
+            <div class="example">
+                <span class="turismo-img" role="img" aria-label="Imagen que muestra uno de los turismos ofertados"></span>
+                <h1>Turismo</h1>
+                <p>Nuestros vehículos para uso personal abarcan una amplia gama para satiafcaer a cualquiera.</p>
+            </div>
+            
+            <div class="example">
+                <span class="monovolumen-img" role="img" aria-label="Imagen que muestra uno de los monovolúmenes ofertados"></span>
+                <h1>Monovolumen</h1>
+                <p>Para aquellos que necesitan más espacio, disponemos de los monovolúmenes más modernos.</p>
+            </div>
+        </div>
+
+        <div class="container02">
+            <div class="review">
+                <span class="review1-img" role="img" aria-label="Imagen que muestra a un cliente que alquiló un turismo"></span>
+                <h1>Comentario de "aanton80":</h1>
+                <p>Ninguna queja, elegimos el coche que queríamos y al momento lo pusieron a nuestra disposición.</p>
+            </div>
+            <div class="review">
+                <span class="review2-img" role="img" aria-label="Imagen que muestra a un cliente que alquiló una motocicleta"></span>
+                <h1>Comentario de "martTPerez":</h1>
+                <p>Quería velocidad para disfrutar de unos días libres, fue genial lo rápido que conseguí lo que quería.</p>
+            </div>
+        </div>
+
+        <div class="form">
+            <h1>¿Necestitas un <br> vehículo de alquiler?</h1>
+            <h2>Pues rellena el formulario y consíguelo cuanto antes.</h2>
+            <form>
+                <label for="nombreCompleto">Nombre completo:</label><br>
+                <input type="text" id="nombreCompleto" name="nombreCompleto" value="Isaías Lafuente"><br><br>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" value="lafuente@mail.com"><br><br>
+                <label for="telefnono">Número de teléfono:</label><br>
+                <input type="text" id="telefnono" name="telefnono" value="+34 610101010"><br><br>
+                <label for="tipo">Elige el tipo de vehículo:</label><br>
+                <select name="tipo">
+                    <option value="motocicleta">Motocicleta</option> 
+                    <option value="turismo">Turismo</option> 
+                    <option value="monovolumen">Monovolumen</option>
+                </select><br><br>
+                <label for="detalles">Coméntanos cualquier detalle adicional:</label><br>
+                <textarea name="detalles" rows="10" cols="30">Prefiero los coches rojos
+                </textarea><br><br>
+                <input type="submit" value="Enviar"> 
+              </form>
+        </div>
+
+        <div class="footer">
+            <div class="guarantee">
+                <h1>Garantías</h1>
+                <p>A pesar de ser una empresa reciente, nos enorgullece poder avalar la calidad
+                    de nuestro servicio grandes empresas <b>Voovle</b> o <b>Vinter</b>, además de
+                    contar un alto nivel de satisfacción en la mayoría de las reseñas de nuestros clientes.
+                    Y por si fuera poco, recientemente hemos reconocidos como una de las empresas que 
+                    benefician en mayor medida el turismo por el gobierno de <i>Casilla la Limpia</i>.
+                </p>
+            </div>
+
+            <div class="contact">
+                <h1>¿Quieres ponerter en contacto con nosotros?</h1>
+                <p>Si tienes alguna pregunta o problema, no dudes en ponerte en contacto con nosotros.
+                    Puedes llamar al número <b>666 666666</b> o en viar un correo a la dirección
+                    <b>smartrent@mail.com</b>, donde nuestros profesionales le antenderán en la mayor 
+                    brevedad prosible para solventar cualquier problema y despejar toda duda que tenga.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
