@@ -1,0 +1,20 @@
+{
+  "name": "practicasass",
+  "version": "1.0.0",
+  "description": "Pratcica introductoria para el uso de Sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/styles/scss/:src/styles/css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "sass": "^1.45.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sourcemaps": "^3.0.0"
+  }
+}

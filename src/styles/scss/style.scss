@@ -1,0 +1,100 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_base.scss";
+
+.header{
+    grid-area: header;
+    @include container($b-color:$gold-color);
+    max-height: 150px;
+
+    h1 {
+        @include title($font-size: 58px);
+    }
+}
+
+.logo{
+    position: relative;
+    border-radius: $radius;
+    max-width: 100%;
+    max-height: 100%;
+    float: left;
+}
+
+.benefits{
+    grid-area: main1;
+    @include container($b-color:$main1-color);
+    h1 {
+        @include title($font-size: $font-size-02);
+    }
+}
+
+.example, .review {
+    @include container-with-image($b-color:$main2-color);
+
+    h1 {
+        @include title($font-size: $font-size-03);
+        margin-top: 180px;
+    }
+}
+
+@each $imag in moto, turismo, monovolumen, review1, review2 {
+    .#{$imag}-img {
+        background: #000 center/cover url('../../img/#{$imag}.jpg') no-repeat;
+        @if((#{$imag}=="review1") or (#{$imag} =="review2")){
+            @include image($s-width: 50%);
+            margin-left: 25%;
+        }
+        @else {
+            @include image($s-width: 100%);
+        }
+    }
+}
+
+.form{
+    grid-area: form;
+    @include container($b-color:$form-color);
+    padding: $padding;
+
+    h1 {
+        @include title($font-size: $font-size-01);
+    }
+
+    h2 {
+        @include title($font-size: $font-size-02);
+    }
+
+    form {
+        input[type=submit]:hover {
+            border: 2px solid #ec0d0d;
+            border-radius: $radius;
+            cursor: pointer;
+        }
+        input[type=text], input[type=email], select, textarea {
+            padding: $padding;
+            border: 2px solid #1a1919;
+            border-radius: $radius;
+            &:focus {
+                border-color: $gold-color;
+            }
+        }
+    }
+}
+
+$themes: guarantee #1297d4 , contact #6ca80b;
+
+.footer{
+    grid-area: footer;
+    row-gap: 20px;
+
+    @each $theme in $themes{
+        $area: nth($theme, 1);
+        $back-color: nth($theme, 2);
+
+        .#{$area}{
+            @include container($b-color:$back-color);
+            h1{
+                @include title($font-size: $font-size-02);
+            }
+        }
+    }
+}
