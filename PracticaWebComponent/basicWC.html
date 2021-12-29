@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Introducción a los Web Components</title>
+
+</head>
+<body>
+	<h1>Prueba de ejecución de un Web Component</h1>	
+	<!-- Uso mi Web Component -->
+	<custom-element></custom-element>
+	<div id ="add" style="border: 2px solid black; display: inline-block;"></div>
+
+		<script>
+		class customElement extends HTMLElement {
+
+		static get observedAttributes() {
+			return ['style'];
+		}
+
+		constructor() {
+
+			super();
+			var comp = document.createElement("p");
+			comp.innerHTML = "Un web component salvaje ha aparecido";
+			const shadow = this.attachShadow({ mode: 'closed' });
+			shadow.appendChild(comp);
+
+        }
+
+        connectedCallback() {
+            console.log("Online");
+        }
+
+        disconnectedCallback() {
+            console.log("Offline");
+        }
+
+        adoptedCallback() {
+            console.log("Creación");
+        }
+
+        attributeChangedCallback() {
+            console.log("Cambio de atributo");
+        }    connectedCallback() {
+            console.log("Online");
+        }
+
+        disconnectedCallback() {
+            console.log("Offline");
+        }
+
+        adoptedCallback() {
+            console.log("Creación");
+        }
+
+        attributeChangedCallback() {
+            console.log("Cambio de atributo");
+        }
+
+    };
+
+	var add = document.getElementById("add");
+	add.innerHTML = "Nuevo web component";
+	add.onclick = function () {
+		webcomp = document.createElement('custom-element');
+		document.body.appendChild(webcomp);
+	}
+	customElements.define('custom-element', customElement)
+	console.log("Script cloaded");
+
+    </script>
+</body>
+</html>
