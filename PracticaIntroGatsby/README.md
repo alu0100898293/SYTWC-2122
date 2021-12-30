@@ -1,0 +1,1 @@
+# Práctica introductoria de Gatsby
