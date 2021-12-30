@@ -1,0 +1,136 @@
+<template id="template-main">
+    <style>
+        @import url("src/styles/template.css");
+    </style>
+    <div class="container">
+        <div class="bloque">
+            <curso></curso>
+            <br>
+            <evento></evento>
+            <br>
+            <comienzo></comienzo>
+            <br>
+            <img></img>
+            <button>Mas info</button>
+        </div>
+        <descriptor>
+            <descripcion>Necesita descripcion</descripcion>
+            <br>
+            <duracion>Necesita duración</duracion>
+        </descriptor>
+    </div>
+</template>
+
+<script>
+    var cursos = ["Biología marina", "Arte", "Farmacia", "Geología"];
+    var eventos = ["Desgustación de medusas", 
+                    "Viaje de autodescubrimiento",
+                    "Cata de medicinas experimentales",
+                    "Nuestra propia erupción"];
+    var fechas = ["04/03/2022", "06/09/2022", "11/02/2022", "21/04/2022"];
+
+    var imagenes = ["medusa.jpg", "viaje.jpg", "medicamentos.jpg", "teide.jpg"];
+
+    var descripciones = ["Descubre el maravilloso sabor de las medusas a la plancha, al horno...",
+                        "Expande tus horizontes en un viaje pensado para descubrirte a ti mismo.",
+                        "Prueba antes que nadie los mediacamentos más modernos y descubre sus nuevos (y posiblemente peligrosos) efectos secundarios",
+                        "Dejemos claro qué volcán en mejor, y pongamos en erupción a nuestro majestuoso Teide."];
+    var duraciones = ["Dos semanas", "Un mes", "Un día", "Seis meses"];
+
+
+
+    console.log("Holis");
+
+    var prototipo = Object.create(HTMLElement.prototype);
+
+    var templateMain = document.currentScript.ownerDocument.querySelector('#template-main').content;
+
+    /*var templateMain = document.querySelector('#template-main').content;
+    var outerClone = document.importNode(templateMain, true);
+    var templateSecondary = outerClone.querySelector('template').content;
+
+    var curso = templateMain.querySelector("curso").cloneNode(true);
+    curso.innerHTML = "<b>Curso:</b> " + cursos[0] + "<br>";
+    templateMain.appendChild(curso);
+
+    var evento = templateMain.querySelector("evento").cloneNode(true);
+    evento.innerHTML = "<b>Evento:</b> " + eventos[0] + "<br>";
+    templateMain.appendChild(evento);
+
+    var comienzo = templateMain.querySelector("comienzo").cloneNode(true);
+    comienzo.innerHTML = "<b>Comienzo:</b> " + fechas[0] + "<br>";
+    templateMain.appendChild(comienzo);
+
+    var image = templateMain.querySelector("img").cloneNode(true);
+    image.src = "src/img/"+imagenes[0];
+    templateMain.appendChild(image);
+
+    var descripcion = templateSecondary.querySelector("descripcion").cloneNode(true);
+    descripcion.textContent = descripciones[0];
+    templateSecondary.appendChild(descripcion);
+
+    var duracion = templateSecondary.querySelector("duracion").cloneNode(true);
+    duracion.textContent = duraciones[0];
+    templateSecondary.appendChild(duracion);
+
+
+    var mainTemplateClone = document.importNode(templateMain, true);
+    document.body.appendChild(mainTemplateClone);*/
+    
+    
+    prototipo.createdCallback = function(){
+
+        console.log("Holis x2");
+
+        var elementContent = this.innerHTML;
+        this.innerHTML = "";
+
+        var mainTemplateClone = document.importNode(templateMain, true);
+
+        if( this.hasAttribute("id")){
+            console.log("Holis x3");
+            var id = this.getAttribute("id");
+
+
+
+            
+            mainTemplateClone.querySelector("curso").innerHTML = "<b>Curso</b>: " + cursos[0];
+            mainTemplateClone.querySelector("evento").innerHTML = "<b>Evento</b>: " + eventos[id];
+            mainTemplateClone.querySelector("comienzo").innerHTML = "<b>Inicio</b>: " + fechas[id];
+
+            mainTemplateClone.querySelector("img").src = "src/img/"+imagenes[id];
+
+            mainTemplateClone.querySelector("descriptor").id = "descriptor" + id;
+
+            mainTemplateClone.querySelector("button").addEventListener('click', () => {
+                
+                var x = this.shadowRoot.querySelector('#descriptor'+id);
+                console.log(x.style.display);
+                if (x.style.display !== "block") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            });
+
+            mainTemplateClone.querySelector("descripcion").innerHTML = "<b>Descripción</b>: " + descripciones[id];
+            mainTemplateClone.querySelector("duracion").innerHTML = "<b>Duración</b>: " + duraciones[id];
+        }
+
+        this.attachShadow({mode: 'open'}).appendChild(mainTemplateClone);
+    };
+
+    /*function showContent(){
+        var x = templateMain.querySelector('#detalles');
+        console.log(x);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }*/
+
+    document.registerElement('info-curso', {
+        prototype: prototipo
+    });
+</script>

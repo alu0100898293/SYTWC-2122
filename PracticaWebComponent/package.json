@@ -1,0 +1,20 @@
+{
+  "name": "practicawebcomponent",
+  "version": "1.0.0",
+  "description": "practica introductoria al uso de los web components",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 8080 -d\" \"open http://localhost:8080/build\""
+  },
+  "author": "Nicolas Hdez Glez",
+  "license": "ISC",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "github:webcomponents/webcomponentsjs#v1",
+    "webcomponents.js": "github:webcomponents/webcomponentsjs#v0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.5.1",
+    "http-server": "^14.0.0"
+  }
+}
