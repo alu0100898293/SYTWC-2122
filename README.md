@@ -8,5 +8,5 @@ Para acceder a las diferentes prárticas de este repositorio, puede valerse de l
 | ----------------------- |:-------------| 
 | Introducción a Sass     | [Sass](https://github.com/alu0100898293/SYTWC-2122/tree/main/PracticaSass)| 
 | Webcomponents           | [Webcomponents](https://github.com/alu0100898293/SYTWC-2122/tree/main/PracticaWebComponent)      |  
-| Introducción a Gatsby   |      |
-|Gatsby                   |      |
+| Introducción a Gatsby   |      [Intro Gatsby](https://github.com/alu0100898293/SYTWC-2122/tree/main/PracticaIntroGatsby)|
+| Gatsby                   |      [Gatsby](https://github.com/alu0100898293/SYTWC-2122/tree/main/PracticaGatsby) |
