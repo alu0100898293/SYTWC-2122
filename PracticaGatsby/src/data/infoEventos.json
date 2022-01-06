@@ -1,0 +1,38 @@
+[
+    {
+        "id": "01",
+        "nombre": "Ponencia sobre mímica en la radio",
+        "fecha": "20/10/22",
+        "imagen": "mimica.png",
+        "altImagen": "Imagen de un mimo actuando",
+        "descripcion": "Nos reuniremos para discutir las posibilidades y dificultades de las posibilidades de la mímica en el mundo radiofónico",
+        "duracion": "4 horas"
+    },
+    {
+        "id": "02",
+        "nombre": "",
+        "fecha": "",
+        "imagen": "",
+        "altImagen": "",
+        "descripcion": "",
+        "duracion": ""
+    },
+    {
+        "id": "03",
+        "nombre": "",
+        "fecha": "",
+        "imagen": "",
+        "altImagen": "",
+        "descripcion": "",
+        "duracion": ""
+    },
+    {
+        "id": "04",
+        "nombre": "",
+        "fecha": "",
+        "imagen": "",
+        "altImagen": "",
+        "descripcion": "",
+        "duracion": ""
+    }
+]
