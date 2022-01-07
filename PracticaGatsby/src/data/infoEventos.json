@@ -4,35 +4,35 @@
         "nombre": "Ponencia sobre mímica en la radio",
         "fecha": "20/10/22",
         "imagen": "mimica.png",
-        "altImagen": "Imagen de un mimo actuando",
+        "altImagen": "Mimo vestido y maquillado como tal actuando",
         "descripcion": "Nos reuniremos para discutir las posibilidades y dificultades de las posibilidades de la mímica en el mundo radiofónico",
         "duracion": "4 horas"
     },
     {
         "id": "02",
-        "nombre": "",
-        "fecha": "",
-        "imagen": "",
-        "altImagen": "",
-        "descripcion": "",
-        "duracion": ""
+        "nombre": "Seminario: el valor de una persona",
+        "fecha": "01/03/22",
+        "imagen": "valor-personal.png",
+        "altImagen": "Una persona sonriendo mostrando el pulgar arriba",
+        "descripcion": "Centrado en la facultad de física, hablaremos de cómo debemos dejar en centrarnos en el físico de las personas y más en su interior",
+        "duracion": "3 horas"
     },
     {
         "id": "03",
-        "nombre": "",
-        "fecha": "",
-        "imagen": "",
-        "altImagen": "",
-        "descripcion": "",
-        "duracion": ""
+        "nombre": "El Guanchecoin",
+        "fecha": "20/04/22",
+        "imagen": "criptomoneda.png",
+        "altImagen": "Una criptomoneda plateada conocida como Silver Bitcoin",
+        "descripcion": "Discutiremos las posibilidades de mercado y cabida de una nueva criptomoneda llamada Guanchecoin, así como sus posibles implementaciones.",
+        "duracion": "3 días"
     },
     {
         "id": "04",
-        "nombre": "",
-        "fecha": "",
-        "imagen": "",
-        "altImagen": "",
-        "descripcion": "",
-        "duracion": ""
+        "nombre": "Curling solidario",
+        "fecha": "25/25/22",
+        "imagen": "curling.png",
+        "altImagen": "Tres piedras de granito empleadas en el curling",
+        "descripcion": "Evento solidario donde se recaudrán fondos para ayudar a todos lo palmeros desplazados que están agustico y no quieren volver.",
+        "duracion": "6 horas"
     }
 ]
