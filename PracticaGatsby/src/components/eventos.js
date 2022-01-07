@@ -87,6 +87,23 @@ const Eventos = () => {
             refs[i].current.style = "display: none";
     };
 
+    const handleKeyPress = (event) => {
+        switch(event.key) {
+            case '1':
+              showMore(0);
+              break;
+            case '2':
+                showMore(1);
+              break;
+            case '3':
+                showMore(2);
+                break;
+            case '4':
+                showMore(3);
+                break;
+          } 
+    };
+
     return (
         <div style={panelStyle}>
             {data.allInfoEventosJson.edges.map( (edge,i) => (
@@ -100,7 +117,9 @@ const Eventos = () => {
                     
                     <img src={edge.node.imagen} alt={edge.node.altImagen} style={imgStyle} /><br/>
 
-                    <button style={buttonStyle} onClick={() =>showMore(i)} >Mostrar detalles</button>
+                    <button style={buttonStyle} onClick={() =>showMore(i)} onKeyPress={handleKeyPress}>
+                        Mostrar detalles
+                    </button>
 
                     <div style = {displayNoneStyle} ref={refs[i]}>
                         <p style={badgeStyle}>Descripcion:</p>

@@ -1,5 +1,6 @@
 import * as React from "react"
 import Eventos from "../components/eventos"
+import { Helmet } from "react-helmet"
 
 // styles
 const pageStyles = {
@@ -37,6 +38,14 @@ const lowTitleStyle = {
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
+      <Helmet 
+        htmlAttributes={{
+          lang: 'es',
+        }}>
+          <meta charSet="utf-8" />
+          <title>Practica avanzada de Gatsby</title>
+      </Helmet>
+      
       <title>Home Page</title>
       <h1 style={headingStyles}>
         Bienvenidos a
@@ -51,11 +60,7 @@ const IndexPage = () => {
         </span>
       </p>
       <p style={paragraphStyles}>
-        Para modificar la visualización de los eventos editar <code style={codeStyles}>src/components/eventos.js</code>
-        {" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
+        Puedes interactuar con los botones mediante tabulador o usando las taclas 1, 2, 3, 4.
       </p>
       <p style={lowTitleStyle}>
         Plantel de eventos
