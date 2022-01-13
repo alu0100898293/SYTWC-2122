@@ -22,7 +22,14 @@
 
 2.  **Accesibilidad**
 
-    Se han seguido las directrices relacionadas con la accesibilidad. Se pueden destacar las descripciones alternativas en imágenes el la posibilidad de usar las teclas del 1 al 4 para emplear los diferentes botones disponibles.
+    Mediante el uso de los plugins _eslint_, _eslint-plugin-react_ y _eslint-plugin-jsx-a11y_ y los sets de reglas recomendados por estos, se han llevado a cabo las modificaciones pertinentes para satisfacer los requisitos de accesibilidad.
+  
+    Pueden comprobarse el cumplimiento de las reglas mencionadas mediante el comando:
+
+    ```shell
+    npm run eslint
+    ```
+
 
 3.  **Plugins**
 
